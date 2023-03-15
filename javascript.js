@@ -35,8 +35,27 @@ const list = [
 
   function onClick(){
     let x = list[Math.floor(Math.random() * 20)]
-    document.getElementById("testA").innerHTML=x[0];
-    document.getElementById("testB").innerHTML=x[1];    
+    document.getElementById("quoteA").innerHTML=x[0];
+    document.getElementById("quoteB").innerHTML=x[1];    
+  }
+
+ window.onload = function hiddenTimerFunction() {
+    hiddenNumber = 0;
+    onClick();
+    hiddenTimer = window.setInterval(function () {
+      if (hiddenNumber < 400) {
+        hiddenNumber += 1;
+      }
+      else {
+        hiddenNumber = 0;
+      }
+    }, 39);
+    hiddenFunction = window.setInterval(function () {
+      if (hiddenNumber > 300) { }
+      else if (hiddenNumber > 251) {  }
+      else if (hiddenNumber > 250)  {  onClick() }
+    }
+      , 39)
   }
   
   

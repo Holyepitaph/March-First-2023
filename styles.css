@@ -67,8 +67,8 @@ img{
 }
 #quotes{
     display:flex;
-    flex-direction:row;
-    justify-content: center;
+    flex-direction:column;
+    align-items:center;
     margin-top:10px;
 }
 footer{
