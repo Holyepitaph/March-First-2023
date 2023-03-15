@@ -1,3 +1,96 @@
-h1{
-    background-color:blue;
+*{
+    background-color:#020219;
+    color:#D98BB6;
+}
+#nav{
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:99;
+    background-color:#020219;
+    left:0px;
+    top:0px;
+    display:none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#navContainer{
+    background-image: url("Galaxy.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    width:100%;
+    height:330px;
+}
+#close{
+    position:absolute;
+    top:15px;
+    right:15px;
+}
+.text{
+    background-color: transparent;
+    padding:2px 5px;
+}
+#navRight{
+    margin-left:auto;
+}
+img{
+    background-color: transparent;
+}
+#none{
+    background-color: white;
+
+}
+#title{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#columns{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: space-around;
+    padding: 30px 15px;
+    margin: 15px;
+    font-size:larger;
+}
+#name{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin:20px 0;
+}
+#quotes{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-top:10px;
+}
+footer{
+    background-image: url("Galaxy.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:330px;
+}
+table, tr, th, td {
+    border: 1px solid #D98BB6;
+    background-color:transparent;
+  }
+footer div{
+    background-color:transparent;
+    padding: 2px 5px;
+}
+.break{
+    border: 1.5px solid #D98BB6;
+    width:100%;
 }
