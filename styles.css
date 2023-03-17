@@ -2,6 +2,9 @@
     background-color:#020219;
     color:#D98BB6;
 }
+#main{
+    overflow:hidden;
+}
 #nav{
     position:absolute;
     height:100%;
@@ -10,10 +13,19 @@
     background-color:#020219;
     left:0px;
     top:0px;
-    display:none;
+    display:flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+#nav *{
+    font-size:26px;
+}
+#open{
+    font-size:24px;
+}
+#close{
+    font-size:18px;
 }
 #navContainer{
     background-image: url("Galaxy.gif");
@@ -25,6 +37,7 @@
     align-items:center;
     width:100%;
     height:330px;
+    font-size:22px;
 }
 #close{
     position:absolute;
@@ -52,11 +65,10 @@ img{
 }
 #columns{
     display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    justify-content: space-around;
-    padding: 30px 15px;
-    margin: 15px;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:10px;
     font-size:larger;
 }
 #name{
@@ -70,6 +82,7 @@ img{
     flex-direction:column;
     align-items:center;
     margin-top:10px;
+    font-size:8px;
 }
 footer{
     background-image: url("Galaxy.gif");
@@ -94,3 +107,55 @@ footer div{
     border: 1.5px solid #D98BB6;
     width:100%;
 }
+
+
+@media screen and (min-width: 480px) {
+    
+    #main{overflow:auto;}
+
+    #navContainer, #navContainer *{
+        font-size: 20px;
+    }
+
+    #navRight{margin-left:10px;}
+
+    #pic{margin-right:0px;}
+
+    #nav{
+        position:static;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        background-color:transparent;
+    }
+
+    #close{display:none;}
+
+    #open{display:none;}
+
+    h1{font-size:45px;}
+
+    h2{font-size:35px;}
+
+    h3{font-size:25px;}
+    
+    #columns{font-size: 20px;}
+
+    .columnsA{flex:48%;}
+    
+    .columnsB{
+        flex:48%;
+        padding-left: 5px; 
+        border-left: 2px solid #D98BB6 
+      }
+
+      #name{font-size:15px;}
+
+    #quoteA{font-size:20px;}
+    
+    #quoteB{font-size:20px;}
+
+      footer div{font-size:20px;}
+
+      }
+      

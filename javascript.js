@@ -1,12 +1,12 @@
 function openLightbox(){
     
-    document.getElementById("test").style.overflow = "hidden";
+    document.getElementById("main").style.overflow = "hidden";
     document.getElementById("nav").style.display = "flex";
     
 }
 
 function closeLightbox(){
-    document.getElementById("test").style.overflow = "auto";
+    document.getElementById("main").style.overflow = "auto";
     document.getElementById("nav").style.display = "none";
 }
 
