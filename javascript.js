@@ -43,19 +43,18 @@ const list = [
     hiddenNumber = 0;
     onClick();
     hiddenTimer = window.setInterval(function () {
-      if (hiddenNumber < 400) {
+      if (hiddenNumber < 10) {
         hiddenNumber += 1;
       }
       else {
         hiddenNumber = 0;
       }
-    }, 39);
+    }, 1000);
     hiddenFunction = window.setInterval(function () {
-      if (hiddenNumber > 300) { }
-      else if (hiddenNumber > 251) {  }
-      else if (hiddenNumber > 250)  {  onClick() }
+      if (hiddenNumber > 10) { }
+      else if (hiddenNumber > 9)  {  onClick() }
     }
-      , 39)
+      , 1000)
   }
   
   
