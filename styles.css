@@ -28,7 +28,7 @@
     font-size:18px;
 }
 #navContainer{
-    background-image: url("Galaxy.gif");
+    background-image: url("galaxy.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left top;
@@ -85,7 +85,7 @@ img{
     font-size:8px;
 }
 footer{
-    background-image: url("Galaxy.gif");
+    background-image: url("galaxy.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
